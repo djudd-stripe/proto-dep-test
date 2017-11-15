@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package = "com.stripe.proto-dep-test";
+
+import "google/protobuf/descriptor.proto";
+
+message Annotation {
+  required string a = 1;
+}
+
+extend google.protobuf.MessageOptions {
+  optional Annotation annotation = 98765;
+}
