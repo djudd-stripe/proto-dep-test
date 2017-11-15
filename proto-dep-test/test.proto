@@ -1,7 +1,5 @@
 syntax = "proto2";
 
-package = "com.stripe.proto-dep-test";
-
 import "google/protobuf/descriptor.proto";
 
 message Annotation {
